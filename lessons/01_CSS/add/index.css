@@ -1,0 +1,36 @@
+h4.a, div {
+    text-align: right;
+}
+p.b {
+    font-family: 'Bad Script', cursive; 
+    text-indent: 25px;
+    word-spacing: 0.5px;
+}
+h3 {
+    font-family: 'Bad Script', cursive; 
+    text-indent: 25px; 
+    text-decoration: underline;
+}
+body {
+    background-color:  #222428; 
+}
+table {
+    width: 650px; 
+    height: 510px;
+    background-color: white;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+span {
+    white-space: nowrap;
+}
+span.c {
+    word-spacing: 2px;
+}
+span.d {
+    word-spacing: 3.4px;
+}
+span.e {
+    word-spacing: 1.4px;
+}

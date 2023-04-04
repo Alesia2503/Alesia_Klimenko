@@ -52,10 +52,10 @@
                 <p><strong>Опрос(голосование):</strong></p>
                 <fieldset>
                     <legend>Как вам?</legend> 
-                    <label><input type="radio" name="how_do_you_like[]" checked> ничего</label><br>
-                    <label><input type="radio" name="how_do_you_like[]"> неплохо</label><br>
-                    <label><input type="radio" name="how_do_you_like[]"> хорошо</label><br>
-                    <label><input type="radio" name="how_do_you_like[]"> супер</label><br>
+                    <label><input type="radio" name="how_do_you_like[]" value="1" checked> ничего</label><br>
+                    <label><input type="radio" name="how_do_you_like[]" value="2"> неплохо</label><br>
+                    <label><input type="radio" name="how_do_you_like[]" value="3"> хорошо</label><br>
+                    <label><input type="radio" name="how_do_you_like[]" value="4"> супер</label><br>
                     <input type="submit" value="Отправить"><br>
                     <input type="hidden" name="date_voite" value="2013.12.31">
                 </fieldset>
@@ -125,7 +125,7 @@
                     <input type="text" name="search" size="25" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]{4,}"><br>
                     <label><cite>Телефонный номер в формате<br>
                     +XXX-XX-XXXXXXX, где X - любое число</cite></label><br>
-                    <input type="tel" name="tel" size="25" placeholder="+375-29-1234567" pattern="[\D0-9]{17,}"><br>
+                    <input type="tel" name="tel" size="25" placeholder="+375-29-1234567" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"><br>
                     <input type="submit" value="Проверить">
                 </fieldset> 
             </form>    
