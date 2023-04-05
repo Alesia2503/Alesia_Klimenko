@@ -4,10 +4,8 @@ div PRE{
     background-color: black; 
     color: green;
     line-height: 0.6;
-    padding: 3mm  2.5mm 3mm;
-    margin: -12mm;
-    overflow: auto;
-    text-align: justify;
+    padding: 3mm  0mm;
+    margin: -12mm; 
 }
 ol {
     width: 350px;
