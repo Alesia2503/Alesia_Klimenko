@@ -1,0 +1,18 @@
+div PRE{
+    background-size: 4;
+    width: 400px; 
+    background-color: black; 
+    color: green;
+    line-height: 0.6;
+    padding: 3mm  2.5mm 3mm;
+    margin: -12mm;
+    overflow: auto;
+    text-align: justify;
+}
+ol {
+    width: 350px;
+    white-space: nowrap;
+}
+div {
+   padding-top: 15mm;    
+}
