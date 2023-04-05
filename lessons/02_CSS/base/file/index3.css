@@ -2,7 +2,6 @@ div.a {
         border: solid transparent 1px; 
         width: 15em; 
         background-color: rgb(212, 208, 218); 
-        align-self: start; 
         float: left;    
 }
 div.b {
@@ -29,4 +28,5 @@ div.d {
 div.e {
         border: solid transparent 1px;
         background-color: rgb(173, 169, 175);
+        clear: both;
 }
