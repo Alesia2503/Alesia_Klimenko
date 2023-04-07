@@ -3,81 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+    main {
+        display: flex; 
+    }
+    .bar {
+        flex-wrap: wrap;
+        background-color: rgb(120, 120, 167); 
+        width: 15em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;   
+    }
+    .bar_battom {
+        background-color: rgb(142, 142, 154); 
+        height: 12.25em;
+        padding-bottom: 0.5em;
+    }
+    .item {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        background-color: rgb(193, 193, 201); 
+        margin-bottom: .2em ; 
+    }
+    .item_next {
+        height: 18em;
+        background-color: rgb(168, 168, 170);
+        background-image: url('111.png');
+        background-position: 35em bottom; 
+        background-repeat: no-repeat;
+        min-width: 80em;
+        margin-bottom: .2em ; 
+        padding-bottom: 0.5em; 
+        padding-top: 0.5em;    
+    }
+    footer {
+            flex: 0 0;
+            background-color: #bac0c3;
+            
+    }
+    </style>
 </head>
 <body>
-    <div style="display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: nowwrap;
-        align-items: flex-start;
-        align-content: space-around;">
-<div style="border: solid transparent 1px; 
-    width: 15em; 
-    background-color: rgb(212, 208, 218);">
-    <h4>Блок навигации</h4>
-    <ul>
-        <li>Ширина 15em</li>
-        <li>Должен присутствовать цвет фона</li>
-        <li>Располагается слева</li>
-        <li>Блок навигации наполните контентом достаточным, 
-        чтобы по высоте он начинал захватывать вторую статью,
-        как показано в данном примере</li>
-    </ul>
-</div>
-<div style="border: solid transparent 1px; 
-margin-bottom: .2em; 
+    <main>
+        <section>
+            <div class="bar">
+            <h4>Блок навигации</h4>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, 
+                    чтобы по высоте он начинал захватывать вторую статью,
+                    как показано в данном примере</li>
+            </ul> 
+        </div>
+        <div class="bar bar_battom">
+        </div>
+        </section>
 
-background-color: rgb(173, 169, 175);
-">
-    <h4>Статья 1</h4>
-    <p>Размер блока:<br>
-        Занимает всю доступную ширину<br>
-        Должен присутствовать цвет фона<br>
-        Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-<br>
-        bottom
-    </p>
-</div> 
-</div>
+        <section>
+          <div class="item ">
+            <h4>Статья 1</h4>
+            <p>Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-<br>
+            bottom
+            </p>
+          </div>
+          <div class="item item_next">
+            <h4>Статья 2</h4>
+            <p>Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-<br>
+                bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                данной статьи для этой картинки.    
+            </p> 
+          </div>
+        </section>
+        </main>
+        <footer>
+            Нижний блок, подвал. Занимает всю доступную ширину. Высота 
+            определяется помещенным внутрь контентом. 
+        </footer>
 
-<div style="border: solid transparent 1px; 
-width: 15em;
-height: 15em;
-background-color: rgb(195, 191, 197);"></div>
-</div> 
-<div style="border: solid transparent 1px; 
-margin-bottom: .2em; 
-
-background-color: rgb(173, 169, 175);
-
-height: 20em;
-background-image: url('1.png');
-background-position: right bottom;
-background-repeat: no-repeat;
-flex-wrap: wrap;">
-    <h4>Статья 2</h4>
-    <p>Размер блока:<br>
-        Занимает всю доступную ширину<br>
-        Должен присутствовать цвет фона<br>
-        Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-<br>
-        bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
-        данной статьи для этой картинки.    
-    </p> 
-</div> 
-
-
-
-
-
-
-<div style="border: solid transparent 1px;
-background-color: rgb(173, 169, 175);">
-    Нижний блок, подвал. Занимает всю доступную ширину. Высота 
-    определяется помещенным внутрь контентом. 
-</div>
-
-
-
-
-    </div>
+    </div> 
 </body>
 </html>

@@ -28,5 +28,6 @@ div.d {
 div.e {
         border: solid transparent 1px;
         background-color: rgb(173, 169, 175);
-        clear: both;
+        clear: none;
+        foo
 }
