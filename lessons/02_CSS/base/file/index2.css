@@ -1,10 +1,12 @@
 div PRE {
-    background-size: 4;
+    height: 60px;
+    overflow-y: auto;
     width: 400px; 
     background-color: black; 
     color: green;
     line-height: 0.6;
-    padding: 3mm  0mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
     margin: -12mm; 
 }
 ol {
