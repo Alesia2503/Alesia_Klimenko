@@ -6,6 +6,7 @@
     <style>
     main {
         display: flex; 
+        background-color: rgb(13, 13, 158); 
     }
     .bar {
         flex-wrap: wrap;
@@ -13,11 +14,6 @@
         width: 15em;
         padding-bottom: 0.5em;
         padding-top: 0.5em;   
-    }
-    .bar_battom {
-        background-color: rgb(142, 142, 154); 
-        height: 12.25em;
-        padding-bottom: 0.5em;
     }
     .item {
         padding-top: 0.5em;
@@ -29,7 +25,7 @@
         height: 18em;
         background-color: rgb(168, 168, 170);
         background-image: url('111.png');
-        background-position: 35em bottom; 
+        background-position: bottom; 
         background-repeat: no-repeat;
         min-width: 80em;
         margin-bottom: .2em ; 
@@ -57,8 +53,6 @@
                     как показано в данном примере</li>
             </ul> 
         </div>
-        <div class="bar bar_battom">
-        </div>
         </section>
 
         <section>
@@ -67,7 +61,7 @@
             <p>Размер блока:<br>
             Занимает всю доступную ширину<br>
             Должен присутствовать цвет фона<br>
-            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-<br>
+            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-
             bottom
             </p>
           </div>
@@ -82,7 +76,7 @@
             </p> 
           </div>
         </section>
-        </main>
+    </main>
         <footer>
             Нижний блок, подвал. Занимает всю доступную ширину. Высота 
             определяется помещенным внутрь контентом. 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+    .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
+        border-style: solid; 
+        border-collapse: collapse;
+        border-color: rgb(10, 10, 10); 
+        border-radius: 5%;
+        background-color: yellow; 
+        width: 150px; 
+        text-align: center; 
+        border-width: 2px ;
+        padding: 5px; 
+        cursor: pointer;
+        float: left;
+    }
+    .Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover, .Saturday:hover {
+        background-color: blueviolet;
+    }
+    .Menu { 
+        width: 150px; 
+        display: none; 
+        margin: 7px 0px 0px -7px;
+    }
+    .Menu > div { 
+        border-style: solid; 
+        border-color: rgb(12, 12, 12); 
+        background-color: cyan;
+        border-radius: 5%; 
+        cursor: pointer; 
+        border-width: 2px; 
+        height: 32px;
+    }
+    .bloks > div:hover div.Menu { 
+        display: block; 
+        position: absolute; 
+    }
+    @media all  and (max-width: 900px){
+       
+        .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
+          float: none;
+          background-color: rgb(242, 33, 224); 
+          width: 200px;  
+        }
+        .Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover, .Saturday:hover {
+        background-color: rgb(64, 226, 43);
+        }
+        .Menu { 
+            width: 150px; 
+            display: none; 
+            margin: -25px  193px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="bloks">
+        <div class="Monday">Понедельник
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="Tuesday">Вторник
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="Wednesday">Среда
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="Thursday">Четверг
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="Friday">Пятница
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="Saturday">Суббота
+            <div class="Menu">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
