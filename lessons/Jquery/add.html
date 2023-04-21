@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery add</title>
+</head>
+<body>
+    <form name="passwd" action="http://fe.it-academy.by/TestForm.php" method="post">
+        <h1>Проверка пароля</h1>
+        <fieldset>
+            <input type="passwd" id="passwd" name="password" size="25">
+            <label for="passwd"><sup>*</sup> Пароль</label><br>
+            <input type="passwd" id="passwd_1" name="password_1" size="25">
+            <label for="passwd"><sup>*</sup> Повторите пароль</label><br>
+            <br>
+            <input type="submit" value="Отправить">
+        </fieldset>
+    </form>  
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function ($) {
+            $('#passwd').keypress(function () {
+                $('#passwd').css( 'backgroundColor', 'green')
+                $('#passwd_1').css( 'backgroundColor', 'green')
+            })
+            $('#passwd_1').keyup (function(){
+                var passwd = $('#passwd').val();
+                var passwd_1 = $('#passwd_1').val();
+                if(passwd != passwd_1) {
+                    $('#passwd').css( 'backgroundColor', 'red')
+                    $('#passwd_1').css( 'backgroundColor', 'red')
+                } 
+            })   
+                $('#passwd_1').keyup (function(){
+                    var passwd = $('#passwd').val();
+                    var passwd_1 = $('#passwd_1').val();
+                    if(passwd == passwd_1) {
+                    $('#passwd').css( 'backgroundColor', 'green')
+                    $('#passwd_1').css( 'backgroundColor', 'green')
+                } 
+            })  
+        });
+    </script>
+</body>
+</html>
